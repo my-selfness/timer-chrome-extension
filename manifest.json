@@ -1,0 +1,14 @@
+{
+"manifest_version":3,
+"name": "Timer",
+"version": "1.0",
+"description": "A chrome extension that helps you to achieve your goals",
+"chrome_url_overrides":{
+    "newtab": "index.html"
+},
+"icons":{
+    "16": "timer.png",
+    "48": "timer.png",
+    "128": "timer.png"
+}
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="timer.png" type="image/x-icon">
+    <title>Get Ready</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("background.jpg");
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        #timer {
+            display: flex;
+            transform: translateX(20px);
+            color: #fff;
+        }
+
+        .days,
+        .hr,
+        .mnt,
+        .sec {
+            font-size: 10rem;
+            /* margin-right: 4rem; */
+            text-align: center;
+            padding: 0 3rem 0 0;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,84,166,1) 0%, rgba(132,189,201,1) 90% );
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .timer_label {
+            font-size: 1.8rem;
+            display: block;
+            transform: translateX(-35px);
+            background: linear-gradient( 67.2deg,  rgba(37,208,199,1) -7.5%, rgba(165,90,240,1) 62.7% );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .colon {
+            font-size: 11rem;
+        }
+
+        .sec .colon {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="timer">
+        <h1 class="days"><span id="day">00</span> <span class="colon">:</span><span class="timer_label">Days</span></h1>
+        <h1 class="hr"><span id="hr">00</span> <span class="colon">:</span><span class="timer_label">Hours</span> </h1>
+        <h1 class="mnt"><span id="mnt">00</span> <span class="colon">:</span><span class="timer_label">Mintues</span>
+        </h1>
+        <h1 class="sec"><span id="sec">00</span><span class="colon">:</span><span class="timer_label">Seconds</span>
+        </h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
